@@ -139,9 +139,9 @@ double testModelLimited(FILE* dataset, long num_lines){
 
 int main(int argc, char* argv[]){
 
-    //Display ussage information if not enough args were specified.
+    //Display usage information if not enough args were specified.
     if(argc < 2 || argc > 3){
-        printf("Ussage: ./Model_Tester [dataset] (num_lines)\\n[] - mandatory () - optional\\n* dataset    - CSV file containing metrics to test model on.\\n* num_lines  - Number of lines in the dataset to iterate over as a long. If greater than total length will stop at end of file.\\nNOTE - Tester assumes following format for data in the CSV, if not in this format will not behave as expected:\\n\\t"""
+        printf("Usage: ./Model_Tester [dataset] (num_lines)\\n[] - mandatory () - optional\\n* dataset    - CSV file containing metrics to test model on.\\n* num_lines  - Number of lines in the dataset to iterate over as a long. If greater than total length will stop at end of file.\\nNOTE - Tester assumes following format for data in the CSV, if not in this format will not behave as expected:\\n\\t"""
     
     #Display features in order they should appear in csv for help menu.
     for i in range(len(features)):
