@@ -10,7 +10,7 @@ To use it first generate a SKLearn DTC model then pass it and the related argume
 
 A brief explanation on how to possibly utilize this library.
 
-1. Create a SKLearn DTC model and pass it into `DTCTC` or load a model from a PKL file with `DTCTC_FromPKL` along with the features the model was trained off. This creates C and header files that represent the DTC model to be imported into a C program. For this example, assume that the function was called with `name` set to `"Example_Model"`.
+1. Create a SKLearn DTC model and pass it into the function `DTCTC` or load a model from a PKL file with the function `DTCTC_FromPKL` along with the features the model was trained off. This creates C and header files that represent the DTC model to be imported into a C program. For this example, assume that the function was called with `name` set to `"Example_Model"`.
 2. From this two new files appear called `"Example_Model.c"` and `"Example_Model.h"`. These represent the model passed into `DTCTC` or `DTCTC_FromPKL` in step 1. Using the same list of features and name as in step 1 call TestMaker. If the name and features do not match the function will either fail to generate code or generate broken code. For the sake of the example assume GCC is installed, and the function was called with `compile` set to `True`.
 3. This creates a new C file and executable both called `"Example_Model_Tester"`. Running the program from the command line with no arguments will then show the usage information shown below.
     ```
