@@ -14,7 +14,7 @@ A brief explanation on how to possibly utilize this library.
 2. From this two new files appear called `"Example_Model.c"` and `"Example_Model.h"`. These represent the model passed into `DTCTC` or `DTCTC_FromPKL` in step 1. Using the same list of features and name as in step 1 call TestMaker. If the name and features do not match the function will either fail to generate code or generate broken code. For the sake of the example assume GCC is installed, and the function was called with `compile` set to `True`.
 3. This creates a new C file and executable both called `"Example_Model_Tester"`. Running the program from the command line with no arguments will then show the usage information shown below.
     ```
-    Ussage: ./Model_Tester [dataset] (num_lines)
+    Usage: ./Model_Tester [dataset] (num_lines)
     [] - mandatory () - optional
     * dataset    - CSV file containing only metrics to test model on.
     * num_lines  - Number of lines in the dataset to iterate over as a long. If greater than total length will stop at end of file.
