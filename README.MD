@@ -15,7 +15,7 @@ A brief explanation on how to possibly utilize this library.
 3. This creates a new C file and executable both called `"Example_Model_Tester"`. Running the program from the command line with no arguments will then show the usage information shown below.
     ```
     Ussage: ./Model_Tester [dataset] (num_lines)
-    [] - mandatory. () - optional
+    [] - mandatory () - optional
     * dataset    - CSV file containing only metrics to test model on.
     * num_lines  - Number of lines in the dataset to iterate over as a long. If greater than total length will stop at end of file.
     NOTE - Tester assumes following format for data in the CSV, if not in this format will not behave as expected:
