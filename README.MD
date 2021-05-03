@@ -41,7 +41,7 @@ Converts python DTC to if and goto statements then writes them to a C file with 
     | Parameters | Type | Description |
     | --- | --- | --- |
     | model | SKLearn.tree.DecisionTreeClassifier | SKLearn DTC model to be converted to C. |
-    | scaler | SKLearn.preprocessing.StandardScaler | List of scaling data that data is transformed according to at runtime. |
+    | scaler | SKLearn.preprocessing.StandardScaler | SKLearn scaler to be applied to data before being tested on. |
     | features | List | List of features that the model is trained on, these are passed in as arguments for the C file. |
     | name | str | Name of the generated C and header files created through the function. If none is provided will default to PDTCTC. |
     | path | str | File path for C and header files to be generated in. If none is provided will generate code in current directory. |
